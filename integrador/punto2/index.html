@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario CV</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 6px;
+            margin-top: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulario CV</h1>
+    <form method="post" action="#">
+
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label>Nombre:
+                <input type="text" name="nombre">
+            </label>
+            <label>Correo electrónico:
+                <input type="email" name="correo">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información académica</legend>
+            <label>Estudios realizados:
+                <textarea name="estudios"></textarea>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experiencia laboral</legend>
+            <label>Último trabajo:
+                <textarea name="experiencia"></textarea>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Referencias</legend>
+            <label>Nombre y contacto:
+                <input type="text" name="referencias">
+            </label>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
